@@ -1,0 +1,11 @@
+ul{
+    list-style-type: none;
+    
+}
+#mensaje{
+    display: none;
+}
+#descripcion{
+    width: 250px;
+    height: 100px;
+}

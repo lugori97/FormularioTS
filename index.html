@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css\estilos.css">
+    </head>
+    <body>
+        <div id="mensaje"></div>
+        <form id="formulario" method="POST">
+            <ul>
+                <li>
+                    <label for="nombre" style="padding-right: 10%">Nombre</label>
+                    <input type="text" required >
+                </li>
+                <li>
+                    <label for="Apellidos" style="padding-right: 9.2%">Apellidos</label>
+                    <input type="text" required>
+                </li>
+                <li>
+                    <label for="Rut" style="padding-right: 12.25%">Rut</label>
+                    <input type="text" id="rut" required maxlength="8" placeholder="sin puntos" size="11px" >
+                    <label for="guion"> - </label>
+                    <input type="text" id="digitoverificador" required maxlength="1" size="2px" placeholder="digito">
+                </li>
+                <li>
+                    <label for="correo" style="padding-right: 10.6%">Correo</label>
+                    <input type="email" required>
+                </li>
+                <li>
+                    <label for="telefono" style="padding-right: 6.25%">Telefono Movil</label>
+                    <input type="number" required minlength="9" maxlength="9" max="999999999">
+                </li>
+                <li>
+                    <label for="lenguajes">Selecciona 1 o mas lenguajes de programacion de su interes</label>
+                    <br>
+                    <input type="checkbox" >Python <br>
+                    <input type="checkbox" >Java <br>
+                    <input type="checkbox" >Typescript <br>
+                    <input type="checkbox" >PHP<br>
+                    <input type="checkbox" >C# <br>
+                    <input type="checkbox" >C++ <br>
+                </li>
+                <li>
+                    <label for="nivel">Cual es su nivel de conocimiento en programacion</label><br>
+                    <input type="range">
+                </li>
+                <li>
+                    <label for="añosExperiencia">Cuantos años de experiencia laboral tiene</label><br>
+                    <input type="radio" >1. 
+                    <input type="radio" >2. 
+                    <input type="radio" >3. 
+                    <input type="radio" >4. 
+                    <input type="radio" >5. 
+
+                </li>
+                <li>
+                    <label for="description">Descripcion personal</label><br>
+                    <input type="text" id="descripcion">
+                </li>
+                <li>
+                    <button type="submit" id="enviar"> Enviar Informacion</button>
+                    <button type="reset" id="borrar">Borrar formulario</button>
+                </li>
+            </ul>
+        </form>
+
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
